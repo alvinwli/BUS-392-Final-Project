@@ -38,7 +38,7 @@ The Market Home Page
    </div>
    <div class="col-4">
         <h2> Your inventory </h2>
-        <p>Click on sell item to put an item back on the Market</p>
+        <p>You can sell items to put it back on the Market</p>
         <br>
         <div class="row">
            {% for owned_item in owned_items %}
@@ -52,7 +52,7 @@ The Market Home Page
                               Sell this Item
                           </button>
                           <p class="card-text"><strong>
-                              This item costs {{ owned_item.price }}$
+                              Selling this item would get you ${{ owned_item.price }}
                           </strong></p>
                       </div>
                   </div>

@@ -23,7 +23,7 @@ def market_page():
                 p_item_object.buy(current_user)
                 flash(f"You purchased {p_item_object.name} for {p_item_object.price}$", category='success')
             else:
-                flash(f"Error: you do not have enough money to purchase {p_item_object.name}!", category='danger')
+                flash(f"Error: You do not have enough money in your account to purchase {p_item_object.name}!", category='danger')
         sold_item = request.form.get('sold_item')
         s_item_object = Item.query.filter_by(name=sold_item).first()
         if s_item_object:
